@@ -5,7 +5,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   images: {
-    domains: ["cdnb.artstation.com"],
+    domains: ["cdnb.artstation.com", "pbs.twimg.com"],
   },
 };
 
