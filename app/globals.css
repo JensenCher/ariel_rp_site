@@ -16,8 +16,9 @@ body {
     hsl(264deg 54% 40%) 87%,
     hsl(287deg 84% 36%) 100%
   ); */
-  background: rgb(5, 39, 41);
-  background: linear-gradient(0deg, rgba(5, 39, 41, 1) 0%, rgba(10, 151, 158, 1) 35%, rgba(198, 224, 230, 1) 100%);
+  /* background: rgb(5, 39, 41);
+  background: linear-gradient(0deg, rgba(5, 39, 41, 1) 0%, rgba(10, 151, 158, 1) 35%, rgba(198, 224, 230, 1) 100%); */
+  background: #f3fdff;
 }
 
 @layer utilities {
