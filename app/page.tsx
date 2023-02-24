@@ -6,7 +6,8 @@ import { redirect } from "next/navigation";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
 import design from "../public/design.png";
-import ToggleDark from "./ToggleDark";
+import juice from "../public/orange_juice.png";
+// import ToggleDark from "./ToggleDark";
 // import { useState } from "react";
 
 export const dynamic = "force-dynamic",
@@ -39,7 +40,6 @@ export default async function Home() {
 
   return (
     <div className="">
-      {" "}
       {/* dark */}
       <main className="px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         {/* min-h-screen */}
@@ -48,7 +48,7 @@ export default async function Home() {
             <h1 className="text-xl font-semibold">Ariel Ramsey Poh</h1>
             <ul className="flex items-center">
               <li>
-                <ToggleDark />
+                {/* <ToggleDark /> */}
                 <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
               </li>
               <li>
@@ -158,24 +158,34 @@ export default async function Home() {
               inventore.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="col-span-2 flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
+              <div className="basis-1/3 flex-1">
+                <Image src={juice} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={design} className="rounded-lg object-cover" width={"100"} height={"100"} layout="responsive" alt="design" />
+            <div className="flex flex-col py-10">
+              <h2 className="text-xl font-bold mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ratione?</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias molestias earum molestiae vero ex, modi, a nisi repellat quasi placeat nobis perferendis dolores.
+                Ducimus ullam blanditiis quia libero? Est alias impedit error ipsam animi delectus, placeat earum magni dicta beatae, dolore nostrum accusamus perspiciatis voluptas
+                aspernatur provident maiores possimus vel!
+              </p>
             </div>
           </div>
         </section>
