@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import { get } from "@vercel/edge-config";
 import { redirect } from "next/navigation";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
+import { AiFillYoutube, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import design from "../public/design.png";
 import juice from "../public/orange_juice.png";
 // import ToggleDark from "./ToggleDark";
@@ -73,8 +73,12 @@ export default async function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3">
-            <AiFillYoutube />
-            <AiFillLinkedin />
+            <a href="https://www.youtube.com/@6ftariel926" target="_blank" title="6ftariel926's YouTube">
+              <AiFillYoutube />
+            </a>
+            <a href="https://www.instagram.com/arielramsey_poh/" target="_blank" title="Ariel's Instagram">
+              <AiFillInstagram />
+            </a>
           </div>
         </section>
         <section className="flex flex-col items-center mx-auto w-full mt-16 px-8">
